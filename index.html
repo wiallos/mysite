@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Neirow, Rina Pusheen, фотография Neirow, фотография Rina Pusheen, фотограф Neirow, фотограф Rina Pusheen, сайт-портфолио фотографа Neirow, сайт-портфолио фотографа Rina Pusheen, портфолио Neirow">
+    <title>Neirow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="mainPage">
+        <header>
+            <div class="logo">
+                <img src="static/assets/images/NEIROW PHOTO.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="link" href="#about-me">Обо мне</a></li>
+                    <li><a id="link" href="#portfolio">Портфолио</a></li>
+                    <li><a id="link" href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="overlay">
+                <p class="top-text">Фотография объединяет людей, вызывает эмоции, заставляет задуматься и мечтать. Это волшебство, которое навсегда изменит ваш взгляд на мир.</p>
+                <span class="creativePhoto">CREATIVE PHOTO</span>
+            </div>
+        </main>
+    </div>
+    <div class="sections">
+
+        <section class="about-section" id="about-me">
+            <h1 class="about-title">Обо мне</h1>
+            <div class="about-container">
+                <div class="photo-representation"><img src="static/assets/images/me.jpg" alt=""></div>
+                <div class="photo-description">
+                    <h2>ФОТОГРАФИЯ - ЭТО ИСКУССТВО</h2>
+                    <p>КАЖДЫЙ ФОТОГРАФ – ЭТО ХУДОЖНИК, КОТОРЫЙ РИСУЕТ СВЕТОМ. 
+                    ОН ВЫБИРАЕТ РАКУРС, ИГРАЕТ С ТЕНЯМИ, ЭКСПЕРИМЕНТИРУЕТ С ЦВЕТОМ, ЧТОБЫ 
+                    СОЗДАТЬ УНИКАЛЬНУЮ КОМПОЗИЦИЮ, КОТОРАЯ БУДЕТ ВОЛНОВАТЬ И ВДОХНОВЛЯТЬ.</p>
+                    <span class="author-name">RINA PUSHEEN</span>
+                    <span class="location">TVER 2024</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="about-title">Портфолио</h1>
+            <div class="photo-container">
+                <div class="photos">
+                    <div class="photo-class">
+                        <div class="photo1"><img src="static/assets/images/dash 1.jpg" alt=""></div>
+                        <div class="photo2"><img src="static/assets/images/sneg1.jpg" alt=""></div>
+                    </div>
+                    <div class="photo-class">
+                        <div class="photo2"><img src="static/assets/images/sneg2.jpg" alt=""></div>
+                        <div class="photo1"><img src="static/assets/images/kirill.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="photo3">
+                    <img src="static/assets/images/sneg3.jpg" alt="">
+                    <span class="dateP">// 26 апреля 2024</span>
+                </div>
+            </div>
+            <div class="photo-container2">
+                <div class="photos2">
+                    <div class="photo-class1">
+                        <div class="photop">
+                            <img src="static/assets/images/pta1.jpg" alt="">
+                        </div>
+                        <div class="photop photop2">
+                            <span class="datePt">// 20 апреля 2024</span>
+                            <img src="static/assets/images/pta2.jpg" alt="">
+                        </div>
+                        <div class="photop">
+                            <img src="static/assets/images/pta3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo3p">
+                    <div class="p3">
+                        <img src="static/assets/images/pta4.jpg" alt="">
+                    </div>
+                    <div class="p4">
+                        <img src="static/assets/images/pta5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="form-section">
+                <div class="text-block">
+                    <h1>НАПИШИТЕ МНЕ</h1>
+                    <p>ПОЛУЧИТЕ ОТВЕТЫ НА ИНТЕРЕСУЮЩИЕ ВОПРОСЫ, ЗАПИШИТЕСЬ НА ФОТОСЕССИЮ ИЛИ УЗНАЙТЕ О СОТРУДНИЧЕСТВЕ СО МНОЙ</p>
+                </div>
+                <div class="form-block">
+                    <form action="/submit" method="POST">
+                        <input type="text" id="name" name="name" placeholder="ВАШЕ ИМЯ" maxlength="30" required>
+                        <input type="text" id="phone" name="phone" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" maxlength="11" pattern="[0-9]+" required>
+                        <textarea id="message" name="message" placeholder="ЧТО ВЫ ХОТИТЕ?" maxlength="150" required></textarea>
+                        <span class="postscrForm">Напишите о своих идеях, желаниях и задумках</span>
+                        <button type="submit">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="footer">
+            <div class="contacts-section">
+                <div class="more-contacts">
+                    <h2>БОЛЬШЕ КОНТАКТОВ</h2>
+                    <ul class="cont-ul">
+                        <li class="lic"><a href="https://wa.me/9000130015">Whatsapp</a></li>
+                        <li class="lic"><a href="https://vk.com/kypmpk">VK</a></li>
+                        <li><a href="https://t.me/mmioku">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="personal-info">
+                    <h2>RINA PUSHEEN</h2>
+                    <p class="pc">wneirow@gmail.com</p>
+                    <p class="pc">+7-900-500-00-00</p>
+                    <p>Russia, Tver</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+      
+        const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('input', function () {
+            const value = phoneInput.value;
+            phoneInput.value = value.replace(/[^0-9]/g, '');
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault()
+
+            const formData = new FormData(this);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/submit', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    alert('Сообщение успешно отправлено!');
+                    
+                } else {
+                    alert('Произошла ошибка. Попробуйте снова.');
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
+
+</body>
+    
+</html>

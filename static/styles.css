@@ -1,0 +1,440 @@
+@font-face {
+    font-family: "Kino"; 
+    src: url("assets//fonts//Kino.ttf") format("truetype"); 
+  
+} 
+@font-face {
+    font-family: "Sedan-Italic"; 
+    src: url("assets//fonts//Sedan-Italic.ttf") format("truetype"); 
+    font-style: italic;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    max-width: 1920px;
+    min-width: 1920px;
+    overflow: hidden;
+    height: 100%; 
+    overflow-y: scroll; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.mainPage {
+    background-image: url("assets/images/mainPhoto.jpg"); 
+    width: 100%;
+    height: 1000px;
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    
+    color: #fff; 
+}
+
+header {
+    /* position: fixed; */
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.overlay {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.top-text {
+    font-family: "Sedan-Italic"; 
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 500px;
+    margin-top: 228px;
+    color: #fff; 
+}
+
+.creativePhoto {
+    font-size: 96px;
+    font-family: "Sedan-Italic"; 
+
+    color: #fff;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-top: 350px;
+}
+
+.sections{
+    background-image: url('assets/images/Frame 1.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+}
+
+.about-title {
+    margin-top: 72px;
+    font-size: 65px;
+
+    font-family: "Kino"; 
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 54px;
+   margin-bottom: 72px;
+}
+
+.photo-representation {
+    border-radius: 10px;
+    width: 705px; 
+    height: 715px; 
+    background-color: #c7a3a3;
+    overflow: hidden; 
+}
+
+.photo-representation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    margin-left: 166px;
+}
+
+.photo-description h2 {
+    font-size: 48px;
+    margin-bottom: 100px;
+    font-family: "Kino";  
+}
+
+.photo-description p {
+    font-size: 32px;
+    width: 852;
+   
+    font-family: "Kino"; 
+}
+
+.author-name {
+    font-family: "Kino"; 
+    font-size: 48px;
+    color: #a60000;
+    margin-top: 262px;
+}
+
+.location {
+    font-family: "Kino"; 
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.photo1 {
+    width: 705px;
+    height: 440px;
+}
+
+.photo2{
+    width: 415px;
+    height: 440px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+}
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 78px;
+    margin-bottom: 54px;
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+.photo-class{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.photo1{
+     margin-bottom: 20px;
+     margin-right: 20px;
+     border-radius: 20px;
+}
+.photo2{
+    margin-right: 20px;
+    border-radius: 20px;
+
+}
+.photo-class img{
+    border-radius: 20px;
+}
+.photo3 img{
+    border-radius: 20px;
+}
+
+.photo3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.photo3 span {
+    align-self: flex-end;
+    margin-top: 8px;
+}
+
+.photo-class1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+.photo-class1 img {
+    border-radius: 20px;
+    box-shadow: 0px 9px 40px 20px rgba(0, 0, 0, 0.2);
+}
+.photop2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+    margin-left: 165px;
+    margin-right: 165px;
+    
+}
+.datePt{
+    margin-bottom: 8px;
+}
+
+.photo3p {
+    display: flex;
+    flex-direction: row;
+    max-width: 1430px;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    margin-top: 80px;
+    margin-bottom: 72px;
+}
+.p4 {
+   
+    justify-content: flex-end;
+}
+.photo3p img {
+    border-radius: 20px;
+    box-shadow: 0px 9px 40px 20px rgba(0, 0, 0, 0.2);
+}
+.mainPage{
+    max-width: 1920px;
+}
+
+.contact{
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 970px; 
+    margin-right: 100px;
+
+}
+
+.text-block {
+    margin-right: 40px; 
+}
+
+.text-block h1 {
+    font-family: "Kino"; 
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.text-block p {
+    font-family: "Kino"; 
+    font-size: 32px;
+    width: 710px;
+    margin-bottom: 136px;
+}
+
+
+.form-block form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block input {
+    font-family: "Kino"; 
+    width: 850px;
+    padding: 16px 0;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    color: #000000;
+}
+.form-block textarea {
+    
+    width: 850px;
+    padding: 16px 0;
+    font-family: "Kino"; 
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    color: #000000;
+}
+#message{
+    resize: none;
+    height: 60px;
+    overflow: hidden;
+}
+.form-block input::placeholder,
+.form-block textarea::placeholder {
+    color: #00000050;
+    font-size: 20px;
+    font-family: "Kino"; 
+}
+
+.form-block textarea {
+    font-family: "Kino"; 
+    resize: none;
+    height: 100px;
+}
+
+.form-block button {
+    font-family: "Kino"; 
+    width: 850px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4f1111;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 9px 40px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.form-block button:hover {
+    background-color: #841616;
+}
+
+.contacts-section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    padding: 48px 0;
+    border-top: 2px solid #ccc; 
+}
+
+
+
+.more-contacts h2, .personal-info h2 {
+    font-family: "Kino"; 
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.more-contacts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.more-contacts li {
+    font-size: 20px;
+    color: #888; 
+ 
+}
+.lic {
+    margin-bottom: 12px;
+}
+.personal-info p {
+    font-size: 20px;
+    color: #888; 
+ 
+}
+.pc{
+    margin-bottom: 12px;
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-end;
+}
+a#link{
+    font-family: "Kino";
+}
+a#link:hover{
+   
+    color: rgb(224, 0, 0)
+}
+.postscrForm{
+    font-family: "Kino"; 
+    font-size: 14px;
+    margin-bottom: 36px;
+    margin-top: 8px;
+    color: #561111;
+}
+
+.cont-ul a{
+    text-decoration: none;
+    color: #888; 
+}
